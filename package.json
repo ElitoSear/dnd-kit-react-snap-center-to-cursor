@@ -1,0 +1,66 @@
+{
+  "type": "module",
+  "name": "@dnd-kit/react-snap-center-to-cursor",
+  "version": "0.5.0",
+  "description": "A React modifier for @dnd-kit/react that positions drag overlays centered on the cursor",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dnd-kit",
+    "react",
+    "drag-and-drop",
+    "drag-overlay",
+    "cursor",
+    "modifier"
+  ],
+  "author": "ElitoSear",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElitoSear/dnd-kit-react-snap-center-to-cursor"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "@dnd-kit/react": ">=0.5.0"
+  },
+  "devDependencies": {
+    "@dnd-kit/react": "^0.5.0",
+    "@testing-library/jest-dom": "^6.1.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.5.0",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.0.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "@vitest/ui": "^1.0.0",
+    "jsdom": "^23.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.5.0",
+    "tsup": "^8.0.2",
+    "vitest": "^1.0.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "tsc --noEmit",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage"
+  }
+}
