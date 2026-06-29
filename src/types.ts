@@ -31,3 +31,11 @@ export interface CenteredDragOverlayProps {
   /** Additional inline styles */
   style?: React.CSSProperties;
 }
+
+/** Configuration options for snapCenterToCursor modifier */
+export interface SnapCenterToCursorOptions {
+  /** Width of the drag overlay element */
+  width?: number;
+  /** Height of the drag overlay element */
+  height?: number;
+}
