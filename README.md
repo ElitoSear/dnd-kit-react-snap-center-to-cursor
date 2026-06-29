@@ -1,8 +1,8 @@
-# @dnd-kit/react-snap-center-to-cursor
+# react-snap-center-to-cursor
 
-[![npm version](https://img.shields.io/npm/v/@dnd-kit/react-snap-center-to-cursor.svg)](https://www.npmjs.com/package/@dnd-kit/react-snap-center-to-cursor)
-[![npm downloads](https://img.shields.io/npm/dm/@dnd-kit/react-snap-center-to-cursor.svg)](https://www.npmjs.com/package/@dnd-kit/react-snap-center-to-cursor)
-[![license](https://img.shields.io/npm/l/@dnd-kit/react-snap-center-to-cursor.svg)](https://github.com/ElitoSear/dnd-kit-react-snap-center-to-cursor/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/react-snap-center-to-cursor.svg)](https://www.npmjs.com/package/react-snap-center-to-cursor)
+[![npm downloads](https://img.shields.io/npm/dm/react-snap-center-to-cursor.svg)](https://www.npmjs.com/package/react-snap-center-to-cursor)
+[![license](https://img.shields.io/npm/l/react-snap-center-to-cursor.svg)](https://github.com/ElitoSear/dnd-kit-react-snap-center-to-cursor/blob/main/LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5+-blue.svg)](https://www.typescriptlang.org/)
 
 A minimal, type-safe React hook and components for positioning `@dnd-kit/react` drag overlays centered on the cursor. Works with `@dnd-kit/react` v0.5.0+.
@@ -19,9 +19,9 @@ A minimal, type-safe React hook and components for positioning `@dnd-kit/react` 
 ## Installation
 
 ```bash
-pnpm add @dnd-kit/react-snap-center-to-cursor
-npm install @dnd-kit/react-snap-center-to-cursor
-yarn add @dnd-kit/react-snap-center-to-cursor
+pnpm add react-snap-center-to-cursor
+npm install react-snap-center-to-cursor
+yarn add react-snap-center-to-cursor
 ```
 
 ### Peer Dependencies
@@ -37,7 +37,7 @@ This package requires:
 
 ```tsx
 import { DragDropProvider } from '@dnd-kit/react';
-import { DragPositionProvider, DragPositionMonitor, CenteredDragOverlay } from '@dnd-kit/react-snap-center-to-cursor';
+import { DragPositionProvider, DragPositionMonitor, CenteredDragOverlay } from 'react-snap-center-to-cursor';
 
 export function App() {
   return (
@@ -61,7 +61,7 @@ export function App() {
 ### 2. Use the `useDragPosition` hook
 
 ```tsx
-import { useDragPosition } from '@dnd-kit/react-snap-center-to-cursor';
+import { useDragPosition } from 'react-snap-center-to-cursor';
 
 function DebugInfo() {
   const { position, isDragging } = useDragPosition();
@@ -140,7 +140,7 @@ import type {
   DragPosition, 
   DragPositionContextValue, 
   CenteredDragOverlayProps 
-} from '@dnd-kit/react-snap-center-to-cursor';
+} from 'react-snap-center-to-cursor';
 ```
 
 ## How It Works
@@ -162,7 +162,7 @@ See the [full documentation](./docs/USAGE.md) for detailed examples.
 
 ```tsx
 import { Draggable, Droppable } from '@dnd-kit/react';
-import { CenteredDragOverlay, useDragPosition } from '@dnd-kit/react-snap-center-to-cursor';
+import { CenteredDragOverlay, useDragPosition } from 'react-snap-center-to-cursor';
 
 function TaskBoard() {
   const { isDragging } = useDragPosition();
